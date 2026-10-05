@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddBooks.AddBooksPageController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/pngtree-an-open-book-with-glowing-pages-and-magical-energy-emanating-from-image_16182667.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnDashBoard" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnDashBoardOnAction" prefHeight="51.0" prefWidth="52.0" />
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="27.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/25694.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="90.0" layoutY="32.0" prefHeight="336.0" prefWidth="420.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Label layoutX="26.0" layoutY="31.0" text="Book ID" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="72.0" text="Book Title " textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="113.0" text="Author" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="154.0" text="Category" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="195.0" text="Published Year" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="236.0" text="Quantity " textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnClear" layoutX="29.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="30.0" prefWidth="70.0" text="Clear" textFill="#0924f4">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddBook" layoutX="267.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="30.0" prefWidth="124.0" text="Add Book">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="lblBookID" layoutX="169.0" layoutY="21.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lblBookTitle" layoutX="169.0" layoutY="62.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lblAuthor" layoutX="169.0" layoutY="103.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbCategory" layoutX="169.0" layoutY="144.0" prefHeight="40.0" prefWidth="223.0" />
+            <TextField fx:id="lblPublishedYear" layoutX="169.0" layoutY="185.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lblQuantity" layoutX="169.0" layoutY="226.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

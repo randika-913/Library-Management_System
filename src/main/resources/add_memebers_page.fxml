@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Member.AddMembersPageController">
+   <children>
+      <ImageView fitHeight="331.0" fitWidth="325.0" layoutX="313.0" layoutY="69.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0">
+         <image>
+            <Image url="@img/pngtree-grey-figures-gather-in-a-group-faceless-crowd-silently-watching-each-png-image_16313998.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="98.0" prefHeight="26.0" prefWidth="98.0" text="Member Id ">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="141.0" prefHeight="26.0" prefWidth="98.0" text="Full Name">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="184.0" prefHeight="26.0" prefWidth="98.0" text="Email ">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="226.0" prefHeight="26.0" prefWidth="125.0" text="Phone Number ">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="270.0" prefHeight="26.0" prefWidth="125.0" text="Address">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMemberID" layoutX="161.0" layoutY="93.0" prefHeight="36.0" prefWidth="112.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtFullName" layoutX="161.0" layoutY="136.0" prefHeight="36.0" prefWidth="236.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="161.0" layoutY="179.0" prefHeight="36.0" prefWidth="236.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPhoneNumber" layoutX="161.0" layoutY="221.0" prefHeight="36.0" prefWidth="155.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="161.0" layoutY="265.0" prefHeight="36.0" prefWidth="273.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAddMembers" layoutX="93.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnAddMembersOnAction" text="Add Member">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDashBoard" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnDashBoardOnAction" prefHeight="61.0" prefWidth="70.0" textFill="#00000001">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/25694.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnViewMembers" layoutX="461.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnViewMembersOnAction" text="View Members" textFill="#0714fc">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="161.0" layoutY="27.0" text="Add Member">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
